@@ -4,5 +4,5 @@
 
 periodicTable.controller('MainCtrl', function($scope) {
     $scope.mainMessage = "Periodic Table Expert System!";
-    $scope.headerMessage = "Test your knowledge of trivia here.";
+
 });

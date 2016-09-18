@@ -1,0 +1,128 @@
+<!--chooseQuiz.html-->
+<style>
+    /*.quiz-logo {
+        width: 150px !important;
+        height: 120px !important;
+    }
+
+    .pad-20 {
+        padding: 20px;
+    }
+*/
+
+#periodic_table {
+    width: 100%;
+    min-width: 600px;
+}
+
+#periodic_table > div {
+    margin-bottom: 2.5%;
+}
+
+/*#periodic_table > div > div {
+    width: 5.5%;
+    display: inline-block;
+    margin-right: -7px;
+}
+
+#periodic_table > div > div > div {
+    border: 3px solid black;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    background: red;
+    margin-top: -3px;
+    padding: 20% 0;
+}*/
+
+table {
+    width: 100%;
+}
+
+th {
+    height: 50px;
+}
+
+td {
+    height: 50px;
+}
+
+.group1 {
+    border-color: red;
+    background-color: green;
+}
+
+
+</style>
+
+<div class="jumbotron" ng-controller="TableCtrl">
+    <h2 class="text-center ">Choose two elements from the table to get started.</h2>
+
+    <br />
+
+    <section id="periodic_table" class="text-center">
+        <div align="center">
+            <table>
+                <tr>
+                    <th class="grp1">Group 1</th>
+                    <th class="grp2">Group 2</th>
+                    <th class="grp3">Group 3</th>
+                    <th class="grp4">Group 4</th>
+                    <th class="grp5">Group 5</th>
+                    <th class="grp6">Group 6</th>
+                    <th class="grp7">Group 7</th>
+                    <th class="grp8">Group 8</th>
+                </tr>
+                <tr>
+                    <td class="grp1">H</td>
+                    <td class="grp2"></td>
+                    <td class="grp3"></td>
+                    <td class="grp4"></td>
+                    <td class="grp5"></td>
+                    <td class="grp6"></td>
+                    <td class="grp7"></td>
+                    <td class="grp8">He</td>
+                </tr>
+                
+                <tr>
+                    <td class="grp1">Li</td>
+                    <td class="grp2">Be</td>
+                    <td class="grp3">B</td>
+                    <td class="grp4">C</td>
+                    <td class="grp5">N</td>
+                    <td class="grp6">O</td>
+                    <td class="grp7">F</td>
+                    <td class="grp8">Ne</td>
+                </tr>
+                
+                <tr>
+                    <td class="grp1">Na</td>
+                    <td class="grp2">Mg</td>
+                    <td class="grp3">Al</td>
+                    <td class="grp4">Si</td>
+                    <td class="grp5">P</td>
+                    <td class="grp6">S</td>
+                    <td class="grp7">Cl</td>
+                    <td class="grp8">Ar</td>
+                </tr>
+
+                <tr>
+                    <td class="grp1">K</td>
+                    <td class="grp2">Ca</td>
+                    <td class="grp3"></td>
+                    <td class="grp4"></td>
+                    <td class="grp5"></td>
+                    <td class="grp6"></td>
+                    <td class="grp7"></td>
+                    <td class="grp8"></td>
+                </tr>
+            </table>    
+        </div>  
+    </section> 
+
+    <div align="center"> 
+        <a class="btn btn-default" ui-sref="Compare">Compare</a>
+    </div>   
+        
+</div>

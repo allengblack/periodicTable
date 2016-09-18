@@ -17,10 +17,11 @@
     <script src="/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="global.js"></script>
 
-    <script src="controllers/QuizCtrl.js"></script>
-    <script src="controllers/QuizListCtrl.js"></script>
+    <!-- // <script src="controllers/QuizCtrl.js"></script> -->
+    <script src="controllers/TableCtrl.js"></script>
     <script src="controllers/MainCtrl.js"></script>
-    <script src="controllers/DisplayCtrl.js"></script>
+     <script src="controllers/CompareCtrl.js"></script>
+    <!-- // <script src="controllers/DisplayCtrl.js"></script> -->
     <link rel="stylesheet" href="style.css">
 
     <base href="/">
@@ -32,27 +33,10 @@
         <div >
             <nav class="navbar navbar-default">
                 <div class="container">
-                    <a ui-sref="Home">
+                    
                     <div class="navbar-header">
-                        <p class="navbar-brand" ng-controller="MainCtrl">{{mainMessage}}</p>
+                        <p align="center" class="navbar-brand" ng-controller="MainCtrl">{{mainMessage}}</p>
 
-                    </div>
-                    <div class="navbar-brand">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <div><span class="glyphicon glyphicon-home"></span>
-                                    <a ui-sref="Home"> Home</a></div>
-                            </li>
-                            <li>
-                                <div><span class="glyphicon glyphicon-hourglass"></span>
-                                    <a ui-sref="Choose A Quiz"> -----</a></div>
-                            </li>
-                            <li>
-                                <div><span class="glyphicon glyphicon-download"></span>
-                                    <a ui-sref="Download"> ------</a>
-                                </div>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </nav>

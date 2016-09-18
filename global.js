@@ -9,56 +9,56 @@ periodicTable.config(function ($locationProvider, $stateProvider){
         controller: 'MainCtrl'
     });
 
-    $stateProvider.state('Choose A Quiz', {
-        url: '/chooseQuiz',
-        templateUrl: 'templates/chooseQuiz.html',
-        controller: 'QuizListCtrl'
+    $stateProvider.state('View Table', {
+        url: '/table',
+        templateUrl: 'templates/table.html',
+        controller: 'TableCtrl'
     });
 
-    $stateProvider.state('Download', {
-        url: '/download',
-        templateUrl: 'templates/downloadQuiz.html',
-        controller: 'DownloadCtrl'
+    $stateProvider.state('Compare', {
+        url: '/compare',
+        templateUrl: 'templates/compare.html',
+        controller: 'CompareCtrl'
     });
 
-    $stateProvider.state('Start Quiz', {
-        url: '/chooseQuiz/startQuiz',
-        templateUrl: 'templates/quiz.html',
-        controller: 'QuizCtrl'
-    });
+    // $stateProvider.state('Start Quiz', {
+    //     url: '/chooseQuiz/startQuiz',
+    //     templateUrl: 'templates/quiz.html',
+    //     controller: 'QuizCtrl'
+    // });
 
-    $stateProvider.state('Display Score', {
-        url: 'display-score',
-        templateUrl: 'templates/displayScore.html',
-        controller: 'DisplayCtrl'
-    });
+    // $stateProvider.state('Display Score', {
+    //     url: 'display-score',
+    //     templateUrl: 'templates/displayScore.html',
+    //     controller: 'DisplayCtrl'
+    // });
 
 });
 
-periodicTable.service('QuizServiceData', function () {
-    var quizUrl = "";
-    var finalScore = 0;
+// periodicTable.service('QuizServiceData', function () {
+//     var quizUrl = "";
+//     var finalScore = 0;
 
-    var setUrl = function (newUrl) {
-        quizUrl = newUrl;
-    };
+//     var setUrl = function (newUrl) {
+//         quizUrl = newUrl;
+//     };
 
-    var getUrl = function () {
-        return quizUrl;
-    };
+//     var getUrl = function () {
+//         return quizUrl;
+//     };
 
-    var setFinalScore = function (score) {
-        finalScore = score;
-    };
+//     var setFinalScore = function (score) {
+//         finalScore = score;
+//     };
 
-    var getFinalScore = function () {
-        return finalScore;
-    };
+//     var getFinalScore = function () {
+//         return finalScore;
+//     };
 
-    return {
-        setUrl: setUrl,
-        getUrl: getUrl,
-        setFinalScore: setFinalScore,
-        getFinalScore: getFinalScore
-    }
-});
+//     return {
+//         setUrl: setUrl,
+//         getUrl: getUrl,
+//         setFinalScore: setFinalScore,
+//         getFinalScore: getFinalScore
+//     }
+// });
