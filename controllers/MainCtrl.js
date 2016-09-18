@@ -1,6 +1,8 @@
+/**
+ * Created by g-man on 8/28/16.
+ */
 
 periodicTable.controller('MainCtrl', function($scope) {
-    // $scope.mainMessage = "Welcome to the Quiz App!";
-    // $scope.headerMessage = "Test your knowledge of trivia here.";
-
+    $scope.mainMessage = "Periodic Table Expert System!";
+    $scope.headerMessage = "Test your knowledge of trivia here.";
 });

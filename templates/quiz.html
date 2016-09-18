@@ -1,0 +1,18 @@
+<!-- quiz.html -->
+    <div class="jumbotron text-center">
+        <div class="row" ng-repeat="question in newQuiz">
+            <h3 class="well well-md">Question: {{$index+1}}</h3>
+            <h4>{{question.text}}</h4>
+                <div class="row">
+                    <div class="col-md-12" ng-repeat="item in question.options" >
+                        <a class="btn btn-default" ng-class="{'btn-success': question.options[$index].answered}"
+                           ng-click="increaseScore(question, question.options[$index])">
+                            {{question.options[$index].text}}
+                        </a>
+                    </div>
+                </div>
+            <br>
+            <br>
+        </div>
+        <a ui-sref="Display Score" class="btn btn-default" ng-click="setFinalScore()"><strong>CHECK YOUR SCORE!</strong></a>
+    </div>

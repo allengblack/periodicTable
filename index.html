@@ -1,34 +1,67 @@
-<!DOCTYPE html>
+<style>
+    .navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+}
+</style>
 
+<!-- index.html -->
+<!DOCTYPE html>
 <html ng-app="periodicTable">
+
 <head>
-	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css" type="text/css" />
 
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-	<script src="js/periodicTable.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+    <script src="/node_modules/angular/angular.min.js"></script>
+    <script src="/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="global.js"></script>
 
+    <script src="controllers/QuizCtrl.js"></script>
+    <script src="controllers/QuizListCtrl.js"></script>
+    <script src="controllers/MainCtrl.js"></script>
+    <script src="controllers/DisplayCtrl.js"></script>
+    <link rel="stylesheet" href="style.css">
 
-	<base href="/">
+    <base href="/">
+
 </head>
 
-<body>
-	<div class="navbar-brand">
-            <p>Expert System....</p>
-            <p>By Martins Ifeoluwa Abdulrasheed</p>
-            <p>supervised by....</p>
-    </div>
-        
-	<div ui-view>
+<body >
+    <header>
+        <div >
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <a ui-sref="Home">
+                    <div class="navbar-header">
+                        <p class="navbar-brand" ng-controller="MainCtrl">{{mainMessage}}</p>
 
+                    </div>
+                    <div class="navbar-brand">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <div><span class="glyphicon glyphicon-home"></span>
+                                    <a ui-sref="Home"> Home</a></div>
+                            </li>
+                            <li>
+                                <div><span class="glyphicon glyphicon-hourglass"></span>
+                                    <a ui-sref="Choose A Quiz"> -----</a></div>
+                            </li>
+                            <li>
+                                <div><span class="glyphicon glyphicon-download"></span>
+                                    <a ui-sref="Download"> ------</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-	</div>
-
-
-
+    <ui-view>
+        <h2>Loading...</h2>
+    </ui-view>
 
 </body>
 
