@@ -1,58 +1,31 @@
 <!--chooseQuiz.html-->
 <style>
-    /*.quiz-logo {
-        width: 150px !important;
-        height: 120px !important;
+
+    #periodic_table {
+        width: 100%;
+        min-width: 600px;
     }
 
-    .pad-20 {
-        padding: 20px;
+    #periodic_table > div {
+        margin-bottom: 2.5%;
     }
-*/
 
-#periodic_table {
-    width: 100%;
-    min-width: 600px;
-}
+    table {
+        width: 100%;
+    }
 
-#periodic_table > div {
-    margin-bottom: 2.5%;
-}
+    th {
+        height: 50px;
+    }
 
-/*#periodic_table > div > div {
-    width: 5.5%;
-    display: inline-block;
-    margin-right: -7px;
-}
+    td {
+        height: 50px;
+    }
 
-#periodic_table > div > div > div {
-    border: 3px solid black;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    text-align: center;
-    background: red;
-    margin-top: -3px;
-    padding: 20% 0;
-}*/
-
-table {
-    width: 100%;
-}
-
-th {
-    height: 50px;
-}
-
-td {
-    height: 50px;
-}
-
-.group1 {
-    border-color: red;
-    background-color: green;
-}
-
+    .group1 {
+        border-color: red;
+        background-color: green;
+    }
 
 </style>
 
@@ -61,7 +34,7 @@ td {
 
     <br />
 
-    <section id="periodic_table" class="text-center">
+    <section id="periodic_table" class="text-center" align="center">
         <div align="center">
             <table>
                 <tr>
@@ -75,41 +48,41 @@ td {
                     <th class="grp8">Group 8</th>
                 </tr>
                 <tr>
-                    <td class="grp1">H</td>
+                    <td class="grp1"><a class="btn btn-default">H</a></td>
                     <td class="grp2"></td>
                     <td class="grp3"></td>
                     <td class="grp4"></td>
                     <td class="grp5"></td>
                     <td class="grp6"></td>
                     <td class="grp7"></td>
-                    <td class="grp8">He</td>
+                    <td class="grp8"><a class="btn btn-default">He</a></td>
                 </tr>
                 
                 <tr>
-                    <td class="grp1">Li</td>
-                    <td class="grp2">Be</td>
-                    <td class="grp3">B</td>
-                    <td class="grp4">C</td>
-                    <td class="grp5">N</td>
-                    <td class="grp6">O</td>
-                    <td class="grp7">F</td>
-                    <td class="grp8">Ne</td>
+                    <td class="grp1"><a class="btn btn-default">Li</a></td>
+                    <td class="grp2"><a class="btn btn-default">Be</a></td>
+                    <td class="grp3"><a class="btn btn-default">B</a></td>
+                    <td class="grp4"><a class="btn btn-default">C</a></td>
+                    <td class="grp5"><a class="btn btn-default">N</a></td>
+                    <td class="grp6"><a class="btn btn-default">O</a></td>
+                    <td class="grp7"><a class="btn btn-default">F</a></td>
+                    <td class="grp8"><a class="btn btn-default">Ne</a></td>
                 </tr>
                 
                 <tr>
-                    <td class="grp1">Na</td>
-                    <td class="grp2">Mg</td>
-                    <td class="grp3">Al</td>
-                    <td class="grp4">Si</td>
-                    <td class="grp5">P</td>
-                    <td class="grp6">S</td>
-                    <td class="grp7">Cl</td>
-                    <td class="grp8">Ar</td>
+                    <td class="grp1"><a class="btn btn-default">Na</a></td>
+                    <td class="grp2 "><a class="btn btn-default">Mg</a></td>
+                    <td class="grp3"><a class="btn btn-default">Al</a></td>
+                    <td class="grp4"><a class="btn btn-default">Si</a></td>
+                    <td class="grp5"><a class="btn btn-default">P</a></td>
+                    <td class="grp6"><a class="btn btn-default">S</a></td>
+                    <td class="grp7"><a class="btn btn-default">Cl</a></td>
+                    <td class="grp8"><a class="btn btn-default">Ar</a></td>
                 </tr>
 
                 <tr>
-                    <td class="grp1">K</td>
-                    <td class="grp2">Ca</td>
+                    <td class="grp1"><a class="btn btn-default">K</a></td>
+                    <td class="grp2"><a class="btn btn-default">Ca</a></td>
                     <td class="grp3"></td>
                     <td class="grp4"></td>
                     <td class="grp5"></td>
@@ -122,7 +95,7 @@ td {
     </section> 
 
     <div align="center"> 
-        <a class="btn btn-default" ui-sref="Compare">Compare</a>
+        <a ui-sref="Compare" class="btn btn-default">Compare</a>
     </div>   
         
 </div>

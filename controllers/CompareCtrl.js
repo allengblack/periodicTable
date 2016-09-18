@@ -3,6 +3,6 @@
  */
 
 periodicTable.controller('CompareCtrl', function($scope) {
-    // $scope.score = QuizServiceData.getFinalScore();
     $scope.message = "Good work!";
+    
 });

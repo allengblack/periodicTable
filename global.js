@@ -21,21 +21,9 @@ periodicTable.config(function ($locationProvider, $stateProvider){
         controller: 'CompareCtrl'
     });
 
-    // $stateProvider.state('Start Quiz', {
-    //     url: '/chooseQuiz/startQuiz',
-    //     templateUrl: 'templates/quiz.html',
-    //     controller: 'QuizCtrl'
-    // });
-
-    // $stateProvider.state('Display Score', {
-    //     url: 'display-score',
-    //     templateUrl: 'templates/displayScore.html',
-    //     controller: 'DisplayCtrl'
-    // });
-
 });
 
-// periodicTable.service('QuizServiceData', function () {
+// periodicTable.service('PeriodicTableServiceData', function () {
 //     var quizUrl = "";
 //     var finalScore = 0;
 

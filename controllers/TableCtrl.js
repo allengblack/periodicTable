@@ -6,10 +6,10 @@ function errorhandler (err, obj) {
     console.error(err, obj);
 }
 
-periodicTable.controller('TableCtrl', function($scope, $http, TableServiceData) {
+periodicTable.controller('TableCtrl', function($scope, $http) {
     $scope.table = [];
     // $scope.search = "";
-    $scope.message = "Select one of the quizzes.";
+    // $scope.message = "Select one of the quizzes.";
 
     // $scope.setUrlString = function (newUrl) {
     //     TableServiceData.setUrl(newUrl);
