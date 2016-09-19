@@ -1,8 +1,4 @@
-# bc-19-quiz-application
+# Periodic Table
 
-## Quiz Application
- This application is a front-end quiz application
- that loads and populates quizzes based on supplied JSON files.
-
- _The application also allows users to download a quiz template where they can add
- submit new questions to the quiz application administrator for inclusion_ (feature under development.).
+## Just a small app to display and compare details between two elements on the periodic table.
+Only got about ten so far.
