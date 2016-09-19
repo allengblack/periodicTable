@@ -1,3 +1,4 @@
+
 var periodicTable = angular.module('periodicTable', ['ui.router']);
 
 periodicTable.config(function ($locationProvider, $stateProvider){
@@ -23,30 +24,47 @@ periodicTable.config(function ($locationProvider, $stateProvider){
 
 });
 
-// periodicTable.service('PeriodicTableServiceData', function () {
-//     var quizUrl = "";
-//     var finalScore = 0;
+periodicTable.service('PeriodicTableServiceData', function () {
+    var elementsToCompare = [];
 
-//     var setUrl = function (newUrl) {
-//         quizUrl = newUrl;
-//     };
+    var addElementUrl = function (newUrl) {
+        if (elementsToCompare.length == 0) {
+            elementsToCompare.push(newUrl);
+            console.log('1');
+        }
+        else if (elementsToCompare.length == 1) {
+            for (var i = 0; i < elementsToCompare.length; i++) {
+                if (elementsToCompare[i] === newUrl) {
+                    console.log('Element already in.');
+                }
+                else {
+                    elementsToCompare.push(newUrl);
+                    console.log('2');
+                }
+            }
+        }
+        else if (elementsToCompare.length == 2) {
+            for (var i = 0; i < elementsToCompare.length; i++) {
+                if (elementsToCompare[i] === newUrl) {
+                    console.log('Element already in.');
+                }
+                else {
+                    elementsToCompare[0] = elementsToCompare[1];
+                    elementsToCompare.pop();
+                    elementsToCompare.push(newUrl);
+                    console.log('3');
+                }
+            }
+        }
+    }
 
-//     var getUrl = function () {
-//         return quizUrl;
-//     };
+    var getElementUrls = function () {
+        return elementsToCompare;
+    };
 
-//     var setFinalScore = function (score) {
-//         finalScore = score;
-//     };
-
-//     var getFinalScore = function () {
-//         return finalScore;
-//     };
-
-//     return {
-//         setUrl: setUrl,
-//         getUrl: getUrl,
-//         setFinalScore: setFinalScore,
-//         getFinalScore: getFinalScore
-//     }
-// });
+    return {
+        elementsToCompare: elementsToCompare,
+        addElementUrl: addElementUrl,
+        getElementUrls: getElementUrls
+    }
+});

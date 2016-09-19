@@ -1,41 +1,53 @@
-<!--chooseQuiz.html-->
+<!--table.html-->
 <style>
-
     #periodic_table {
         width: 100%;
         min-width: 600px;
     }
-
-    #periodic_table > div {
-        margin-bottom: 2.5%;
-    }
-
     table {
-        width: 100%;
+        width: 60%;
     }
-
     th {
         height: 50px;
     }
-
     td {
         height: 50px;
     }
-
-    .group1 {
-        border-color: red;
-        background-color: green;
+    .table{
+        background-color: darkgray;
     }
-
+    /*.grp1 {*/
+        /*color: cyan;*/
+    /*}*/
+    /*.grp2 {*/
+        /*color: cyan;*/
+    /*}*/
+    /*.grp3 {*/
+        /*color: cyan;*/
+    /*}*/
+    /*.grp4 {*/
+        /*color: cyan;*/
+    /*}*/
+    /*.grp5 {*/
+        /*color: cyan;*/
+    /*}*/
+    /*.grp6 {*/
+        /*color: cyan;*/
+    /*}*/
+    /*.grp7 {*/
+        /*color: cyan;*/
+    /*}*/
+    /*.grp8 {*/
+        /*color: cyan;*/
+    /*}*/
 </style>
 
-<div class="jumbotron" ng-controller="TableCtrl">
-    <h2 class="text-center ">Choose two elements from the table to get started.</h2>
+<div class="jumbotron">
+    <h2 class="text-center">Choose two elements from the table to get started.</h2>
 
     <br />
-
     <section id="periodic_table" class="text-center" align="center">
-        <div align="center">
+        <div class="table" align="center">
             <table>
                 <tr>
                     <th class="grp1">Group 1</th>
@@ -48,30 +60,30 @@
                     <th class="grp8">Group 8</th>
                 </tr>
                 <tr>
-                    <td class="grp1"><a class="btn btn-default">H</a></td>
+                    <td class="grp1"><a class="btn btn-default" ng-click="addElementUrl('elements/hydrogen.json')" ng-class="{'btn-success': }">H</a></td>
                     <td class="grp2"></td>
                     <td class="grp3"></td>
                     <td class="grp4"></td>
                     <td class="grp5"></td>
                     <td class="grp6"></td>
                     <td class="grp7"></td>
-                    <td class="grp8"><a class="btn btn-default">He</a></td>
+                    <td class="grp8"><a class="btn btn-default" ng-click="addElementUrl('elements/helium.json')">He</a></td>
                 </tr>
                 
                 <tr>
-                    <td class="grp1"><a class="btn btn-default">Li</a></td>
-                    <td class="grp2"><a class="btn btn-default">Be</a></td>
-                    <td class="grp3"><a class="btn btn-default">B</a></td>
+                    <td class="grp1"><a class="btn btn-default" ng-click="addElementUrl('elements/lithium.json')">Li</a></td>
+                    <td class="grp2"><a class="btn btn-default" ng-click="addElementUrl('elements/beryllium.json')">Be</a></td>
+                    <td class="grp3"><a class="btn btn-default" ng-click="addElementUrl('elements/boron.json')">B</a></td>
                     <td class="grp4"><a class="btn btn-default">C</a></td>
                     <td class="grp5"><a class="btn btn-default">N</a></td>
                     <td class="grp6"><a class="btn btn-default">O</a></td>
                     <td class="grp7"><a class="btn btn-default">F</a></td>
                     <td class="grp8"><a class="btn btn-default">Ne</a></td>
                 </tr>
-                
+
                 <tr>
                     <td class="grp1"><a class="btn btn-default">Na</a></td>
-                    <td class="grp2 "><a class="btn btn-default">Mg</a></td>
+                    <td class="grp2"><a class="btn btn-default">Mg</a></td>
                     <td class="grp3"><a class="btn btn-default">Al</a></td>
                     <td class="grp4"><a class="btn btn-default">Si</a></td>
                     <td class="grp5"><a class="btn btn-default">P</a></td>

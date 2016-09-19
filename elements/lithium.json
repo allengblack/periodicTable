@@ -1,0 +1,10 @@
+{
+  "name": "Lithium",
+  "number": 3,
+  "symbol": "Li",
+  "atomic_weight": 6.941,
+  "melt": 180,
+  "boil": 1347,
+  "density": 0.53,
+  "ionisation": 5.3917
+}

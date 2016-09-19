@@ -1,0 +1,9 @@
+{
+  "name": "Hydrogen",
+  "number": "1",
+  "symbol": "H",
+  "atomic_weight": 1.0079,
+  "melt": -259,
+  "boil": -253,
+  "ionisation": 13.5984
+}

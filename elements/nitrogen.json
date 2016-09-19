@@ -1,0 +1,10 @@
+{
+  "name": "Nitrogen",
+  "number": 7,
+  "symbol": "N",
+  "atomic_weight": 14.0067,
+  "melt": -210,
+  "boil": -196,
+  "density": 1.25,
+  "ionisation": 14.5341
+}

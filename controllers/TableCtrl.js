@@ -6,21 +6,15 @@ function errorhandler (err, obj) {
     console.error(err, obj);
 }
 
-periodicTable.controller('TableCtrl', function($scope, $http) {
-    $scope.table = [];
-    // $scope.search = "";
-    // $scope.message = "Select one of the quizzes.";
+periodicTable.controller('TableCtrl', function($scope, $http, PeriodicTableServiceData) {
+    $scope.addElementUrl = function (url) {
+        PeriodicTableServiceData.addElementUrl(url);
+    };
 
-    // $scope.setUrlString = function (newUrl) {
-    //     TableServiceData.setUrl(newUrl);
-    // };
+    // $http.get("table.json").success(function (response) {
+    //     $scope.table = response;
+    //     console.log(response);
+    // }).error(errorhandler);
 
-    // $scope.increaseScore = function() {
-    //     $scope.TableServiceData.increaseScore();
-    // };
-
-    $http.get("table.json").success(function (response) {
-        $scope.table= response;
-        console.log(response);
-    }).error(errorhandler);
+    // $scope.addElementUrl(url) = PeriodicTableServiceData.addElementUrl(url);
 });

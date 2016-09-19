@@ -1,0 +1,10 @@
+{
+  "name": "Neon",
+  "number": 10,
+  "symbol": "Ne",
+  "atomic_weight": 20.1797,
+  "melt": -249,
+  "boil": -246,
+  "density": 0.9,
+  "ionisation": 21.5645
+}
