@@ -3,17 +3,29 @@
  */
 
 periodicTable.controller('CompareCtrl', function($scope, $http, PeriodicTableServiceData) {
-    $scope.elementUrls = PeriodicTableServiceData.getElementUrls();
-    // $scope.element1 = '';
-    // $scope.element2 = '';
+    $scope.elements = PeriodicTableServiceData.getElementNames();
 
-    $http.get($scope.elementUrls[0]).success(function (response) {
-        $scope.element1 = response;
-        console.log(response);
-    });
+    $scope.clearArray = function () {
+        PeriodicTableServiceData.clearArray();
+    }
 
-    $http.get($scope.elementUrls[1]).success(function (response) {
-        $scope.element2 = response;
-        console.log(response);
-    });
+    $scope.checkSize = function () {
+        if ($scope.elements.length > 0){return true}
+        else
+            return false
+    }
+
+    // $http.get($scope.elementUrls[0]).success(function (response) {
+    //     $scope.element1 = response;
+    //     console.log(response);
+    // });
+    //
+    // $http.get($scope.elementUrls[1]).success(function (response) {
+    //     $scope.element2 = response;
+    //     console.log(response);
+    // });
+
+    // for(var i=0; $scope.elementUrls.length; i++){
+    //
+    // }
 });

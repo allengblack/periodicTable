@@ -11,12 +11,15 @@ periodicTable.controller('TableCtrl', function($scope, $http, PeriodicTableServi
     $scope.elements = [];
     $scope.elementsGroup = [];
 
-    $scope.increaseCount = function () {
-        $scope.count++;
-    }
-
-    $scope.addElementUrl = function (url) {
-        PeriodicTableServiceData.addElementUrl(url);
+    $scope.addElement = function (element) {
+        if (PeriodicTableServiceData.elementsToCompare.contains(element)) {
+            PeriodicTableServiceData.removeElement(element);
+            element.clicked = false;
+        }
+        else {
+            PeriodicTableServiceData.addElement(element);
+            element.clicked = true;
+        }
     };
 
     $http.get("elements/elements.json").success(function (response) {

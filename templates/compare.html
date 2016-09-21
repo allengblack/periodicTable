@@ -16,59 +16,57 @@
 
 <div class="jumbotron text-center">
     <p>
-    	{{message}}
 
-    <div>
-    <table align="center">
-        <tr>
-            <th>Element name</th>
-            <th>{{element1.name}}</th>
-            <th>{{element2.name}}</th>
-        </tr>
-        <tr>
-            <td>Element number</td>
-            <td>{{element1.number}}</td>
-            <td>{{element2.number}}</td>
-        </tr>
+    <div ng-hide="checkSize()">
+        You haven't made any selection(s).
+    </div>
 
-        <tr>
-            <td>Element symbol</td>
-            <td>{{element1.symbol}}</td>
-            <td>{{element2.symbol}}</td>
-        </tr>
+    <div class="table" ng-show="checkSize()">
+        <table align="center" >
+            <tr>
+                <th>Element name</th>
+                <th ng-repeat="element in elements">{{element.name}}</th>
+            </tr>
+            <tr>
+                <td>Element number</td>
+                <td ng-repeat="element in elements">{{element.number}}</td>
+            </tr>
 
-        <tr>
-            <td>Atomic weight of element</td>
-            <td>{{element1.atomic_weight}}</td>
-            <td>{{element2.atomic_weight}}</td>
-        </tr>
+            <tr>
+                <td>Element symbol</td>
+                <td ng-repeat="element in elements">{{element.symbol}}</td>
+            </tr>
 
-        <tr>
-            <td>Melting point</td>
-            <td>{{element1.melt}}</td>
-            <td>{{element2.melt}}</td>
-        </tr>
+            <tr>
+                <td>Atomic weight of element</td>
+                <td ng-repeat="element in elements">{{element.atomic_weight}}</td>
+            </tr>
 
-        <tr>
-            <td>Boiling point</td>
-            <td>{{element1.boil}}</td>
-            <td>{{element2.boil}}</td>
-        </tr>
+            <tr>
+                <td>Melting point</td>
+                <td ng-repeat="element in elements">{{element.melt}}</td>
+            </tr>
 
-        <tr>
-            <td>Ionisation Energy of Element</td>
-            <td>{{element1.ionisation}}</td>
-            <td>{{element2.ionisation}}</td>
-        </tr>
+            <tr>
+                <td>Boiling point</td>
+                <td ng-repeat="element in elements">{{element.boil}}</td>
+            </tr>
 
-        <tr>
-            <td>Element number</td>
-            <td>{{element1.number}}</td>
-            <td>{{element2.number}}</td>
-        </tr>
+            <tr>
+                <td>Ionisation Energy of Element</td>
+                <td ng-repeat="element in elements">{{element.ionisation}}</td>
+            </tr>
 
-    </table>
+            <tr>
+                <td>Element number</td>
+                <td ng-repeat="element in elements">{{element.number}}</td>
+            </tr>
 
-    Go back to <a ui-sref="View Table">TABLE?</a>
+        </table>
+    </div>
+
     </p>
+        <div>
+            Go back to <a ui-sref="View Table" ng-click="clearArray()">TABLE?</a>
+        </div>
 </div>

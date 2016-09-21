@@ -27,44 +27,27 @@ periodicTable.config(function ($locationProvider, $stateProvider){
 periodicTable.service('PeriodicTableServiceData', function () {
     var elementsToCompare = [];
 
-    var addElementUrl = function (newUrl) {
-        if (elementsToCompare.length == 0) {
-            elementsToCompare.push(newUrl);
-            console.log('1');
-        }
-        else if (elementsToCompare.length == 1) {
-            for (var i = 0; i < elementsToCompare.length; i++) {
-                if (elementsToCompare[i] === newUrl) {
-                    console.log('Element already in.');
-                }
-                else {
-                    elementsToCompare.push(newUrl);
-                    console.log('2');
-                }
-            }
-        }
-        else if (elementsToCompare.length == 2) {
-            for (var i = 0; i < elementsToCompare.length; i++) {
-                if (elementsToCompare[i] === newUrl) {
-                    console.log('Element already in.');
-                }
-                else {
-                    elementsToCompare[0] = elementsToCompare[1];
-                    elementsToCompare.pop();
-                    elementsToCompare.push(newUrl);
-                    console.log('3');
-                }
-            }
-        }
+    var addElement = function (newElement) {
+        this.elementsToCompare.toggle(newElement);
     }
 
-    var getElementUrls = function () {
+    var removeElement = function (newElement) {
+        this.elementsToCompare.toggle(newElement);
+    }
+
+    var clearArray = function () {
+        this.elementsToCompare.clear();
+    }
+
+    var getElementNames = function () {
         return elementsToCompare;
     };
 
     return {
         elementsToCompare: elementsToCompare,
-        addElementUrl: addElementUrl,
-        getElementUrls: getElementUrls
+        addElement: addElement,
+        removeElement: removeElement,
+        getElementNames: getElementNames,
+        clearArray: clearArray
     }
 });

@@ -61,7 +61,8 @@
                 </tr>
                 <tr ng-repeat="group in elementsGroup track by $index">
                     <td class="grp{{$index + 1}}" ng-repeat="element in group track by $index">
-                        <a class="btn btn-default" ng-if="element != null">{{element.symbol}} </a>
+                        <a class="btn btn-default" ng-if="element != null" ng-class="{'btn-success': element.clicked}"
+                           ng-click="addElement(element)">{{element.symbol}} </a>
                     </td>
                 </tr>
             </table>    
