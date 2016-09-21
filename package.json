@@ -4,7 +4,7 @@
   "description": "An expert system for comparing elements.",
   "main": "global.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "global.js"
   },
   "repository": {
     "type": "git",
