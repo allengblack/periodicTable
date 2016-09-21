@@ -1,0 +1,201 @@
+[
+  {
+    "name": "Hydrogen",
+    "number": "1",
+    "symbol": "H",
+    "atomic_weight": 1.0079,
+    "melt": -259,
+    "boil": -253,
+    "ionisation": 13.5984
+  },
+  {
+    "name": "Helium",
+    "number": "2",
+    "symbol": "He",
+    "atomic_weight": 4.0026,
+    "melt": -272,
+    "boil": -269,
+    "density": 0.18,
+    "ionisation": 12.5874
+  },
+  {
+    "name": "Lithium",
+    "number": 3,
+    "symbol": "Li",
+    "atomic_weight": 6.941,
+    "melt": 180,
+    "boil": 1347,
+    "density": 0.53,
+    "ionisation": 5.3917
+  },
+  {
+    "name": "Beryllium",
+    "number": 4,
+    "symbol": "Be",
+    "atomic_weight": 9.0122,
+    "melt": 1278,
+    "boil": 2970,
+    "density": 1.85,
+    "ionisation": 9.3227
+  },
+  {
+    "name": "Boron",
+    "number": "5",
+    "symbol": "B",
+    "atomic_weight": 10.811,
+    "melt": 2330,
+    "boil": 2550,
+    "density": 2.34,
+    "ionisation": 8.298
+  },
+  {
+    "name": "Carbon",
+    "number": "6",
+    "symbol": "C",
+    "atomic_weight": 12.0107,
+    "melt": 3500,
+    "boil": 4827,
+    "density": 2.26,
+    "ionisation": 11.2603
+  },
+  {
+    "name": "Nitrogen",
+    "number": 7,
+    "symbol": "N",
+    "atomic_weight": 14.0067,
+    "melt": -210,
+    "boil": -196,
+    "density": 1.25,
+    "ionisation": 14.5341
+  },
+  {
+    "name": "Oxygen",
+    "number": 8,
+    "symbol": "O",
+    "atomic_weight": 15.9994,
+    "melt": -218,
+    "boil": -183,
+    "density": 1.43,
+    "ionisation": 13.6181
+  },
+  {
+    "name": "Fluorine",
+    "number": 9,
+    "symbol": "F",
+    "atomic_weight": 18.9984,
+    "melt": -220,
+    "boil": -188,
+    "density": 1.7,
+    "ionisation": 17.4228
+  },
+  {
+    "name": "Neon",
+    "number": 10,
+    "symbol": "Ne",
+    "atomic_weight": 20.1797,
+    "melt": -249,
+    "boil": -246,
+    "density": 0.9,
+    "ionisation": 21.5645
+  },
+  {
+    "name": "Sodium",
+    "number": 11,
+    "symbol": "Na",
+    "atomic_weight": 22.9897,
+    "melt":	98,
+    "boil": 883,
+    "density": 0.97,
+    "ionisation": 5.1391
+  },
+  {
+    "name": "Magnesium",
+    "number": 12,
+    "symbol": "Mg",
+    "atomic_weight": 24.305,
+    "melt": 639,
+    "boil": 1093,
+    "density": 1.74,
+    "ionisation": 7.6462
+  },
+  {
+    "name": "Aluminium",
+    "number": 13,
+    "symbol": "Al",
+    "atomic_weight": 26.9815	,
+    "melt": 660,
+    "boil": 2467,
+    "density": 2.7,
+    "ionisation": 5.9858
+  },
+  {
+    "name": "Silicon",
+    "number": 14,
+    "symbol": "Si",
+    "atomic_weight":28.0855,
+    "melt": 1410,
+    "boil": 2355,
+    "density": 2.33,
+    "ionisation": 8.1517
+  },
+  {
+    "name": "Phosphorus",
+    "number": 15,
+    "symbol": "P",
+    "atomic_weight": 30.9738,
+    "melt": 44,
+    "boil": 280,
+    "density": 1.82,
+    "ionisation": 10.4867
+  },
+  {
+    "name": "Sulphur",
+    "number": 16,
+    "symbol": "S",
+    "atomic_weight": 32.065,
+    "melt": 113,
+    "boil": 445,
+    "density": 2.07,
+    "ionisation": 10.36
+  },
+  {
+    "name": "Chlorine",
+    "number": 17,
+    "symbol": "Cl",
+    "atomic_weight": 35.453,
+    "melt": -101,
+    "boil": -35,
+    "density": 3.21,
+    "ionisation": 12.9676
+  },
+  {
+    "name": "Argon",
+    "number": 18,
+    "symbol": "Ar",
+    "atomic_weight": 39.948,
+    "melt": -189,
+    "boil": -186,
+    "density": 1.78,
+    "ionisation": 15.7596
+  },
+  {
+    "name": "Potassium",
+    "number": 19,
+    "symbol": "K",
+    "atomic_weight": 39.0983,
+    "melt": 64,
+    "boil": 774,
+    "density": 0.86,
+    "ionisation": 4.3407
+  },
+  {
+    "name": "Calcium",
+    "number": 20,
+    "symbol": "Ca",
+    "atomic_weight": 40.078,
+    "melt": 839,
+    "boil": 1484,
+    "density": 1.55,
+    "ionisation": 6.1132
+  }
+]

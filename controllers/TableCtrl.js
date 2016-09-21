@@ -7,14 +7,21 @@ function errorhandler (err, obj) {
 }
 
 periodicTable.controller('TableCtrl', function($scope, $http, PeriodicTableServiceData) {
+    $scope.count = 0;
+    $scope.elements = [];
+
+    $scope.increaseCount = function () {
+        $scope.count++;
+    }
+
     $scope.addElementUrl = function (url) {
         PeriodicTableServiceData.addElementUrl(url);
     };
 
-    // $http.get("table.json").success(function (response) {
-    //     $scope.table = response;
-    //     console.log(response);
-    // }).error(errorhandler);
+    $http.get("elements/elements.json").success(function (response) {
+        $scope.elements = response;
+        console.log(response);
+    }).error(errorhandler);
 
     // $scope.addElementUrl(url) = PeriodicTableServiceData.addElementUrl(url);
 });

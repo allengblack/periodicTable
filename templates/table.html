@@ -60,48 +60,47 @@
                     <th class="grp8">Group 8</th>
                 </tr>
                 <tr>
-                    <td class="grp1"><a class="btn btn-default" ng-click="addElementUrl('elements/hydrogen.json')">H</a></td>
+                    <td class="grp1">
+                        <a class="btn btn-default"  ng-click="addElementUrl('elements/hydrogen.json')">{{elements[count].symbol}} </a>
+                    </td>
                     <td class="grp2"></td>
                     <td class="grp3"></td>
                     <td class="grp4"></td>
                     <td class="grp5"></td>
                     <td class="grp6"></td>
                     <td class="grp7"></td>
-                    <td class="grp8"><a class="btn btn-default" ng-click="addElementUrl('elements/helium.json')">He</a></td>
+                    <td class="grp8">
+                        <a class="btn btn-default" ng-click="addElementUrl('elements/helium.json')">{{elements[count+1].symbol}}</a>
+                    </td>
                 </tr>
                 
                 <tr>
-                    <td class="grp1"><a class="btn btn-default" ng-click="addElementUrl('elements/lithium.json')">Li</a></td>
-                    <td class="grp2"><a class="btn btn-default" ng-click="addElementUrl('elements/beryllium.json')">Be</a></td>
-                    <td class="grp3"><a class="btn btn-default" ng-click="addElementUrl('elements/boron.json')">B</a></td>
-                    <td class="grp4"><a class="btn btn-default" ng-click="addElementUrl('elements/carbon.json')">C</a></td>
-                    <td class="grp5"><a class="btn btn-default" ng-click="addElementUrl('elements/nitrogen.json')">N</a></td>
-                    <td class="grp6"><a class="btn btn-default" ng-click="addElementUrl('elements/oxygen.json')">O</a></td>
-                    <td class="grp7"><a class="btn btn-default" ng-click="addElementUrl('elements/fluorine.json')">F</a></td>
-                    <td class="grp8"><a class="btn btn-default" ng-click="addElementUrl('elements/neon.json')">Ne</a></td>
+                    <td class="grp1">
+                        <a class="btn btn-default" ng-click="addElementUrl('')">{{elements[count+2].symbol}}</a>
+                    </td>
+                    <td class="grp2">
+                        <a class="btn btn-default" ng-click="addElementUrl('')">{{elements[count+3].symbol}}</a>
+                    </td>
+                    <td class="grp3">
+                        <a class="btn btn-default" ng-click="addElementUrl('')">{{elements[count+4].symbol}}</a>
+                    </td>
+                    <td class="grp4">
+                        <a class="btn btn-default" ng-click="addElementUrl()">{{elements[count+5].symbol}}</a>
+                    </td>
+                    <td class="grp5">
+                        <a class="btn btn-default" ng-click="addElementUrl('')">{{elements[count+6].symbol}}</a>
+                    </td>
+                    <td class="grp6">
+                        <a class="btn btn-default" ng-click="addElementUrl('')">{{elements[count+7].symbol}}</a>
+                    </td>
+                    <td class="grp7">
+                        <a class="btn btn-default" ng-click="addElementUrl('')">{{elements[count+8].symbol}}</a>
+                    </td>
+                    <td class="grp8">
+                        <a class="btn btn-default" ng-click="addElementUrl('')">{{elements[count+9].symbol}}</a>
+                    </td>
                 </tr>
 
-                <tr>
-                    <td class="grp1"><a class="btn btn-default" ng-click="addElementUrl('elements/sodium.json')">Na</a></td>
-                    <td class="grp2"><a class="btn btn-default" ng-click="addElementUrl('elements/magnesium.json')">Mg</a></td>
-                    <td class="grp3"><a class="btn btn-default">Al</a></td>
-                    <td class="grp4"><a class="btn btn-default">Si</a></td>
-                    <td class="grp5"><a class="btn btn-default">P</a></td>
-                    <td class="grp6"><a class="btn btn-default">S</a></td>
-                    <td class="grp7"><a class="btn btn-default">Cl</a></td>
-                    <td class="grp8"><a class="btn btn-default">Ar</a></td>
-                </tr>
-
-                <tr>
-                    <td class="grp1"><a class="btn btn-default">K</a></td>
-                    <td class="grp2"><a class="btn btn-default">Ca</a></td>
-                    <td class="grp3"></td>
-                    <td class="grp4"></td>
-                    <td class="grp5"></td>
-                    <td class="grp6"></td>
-                    <td class="grp7"></td>
-                    <td class="grp8"></td>
-                </tr>
             </table>    
         </div>  
     </section> 
