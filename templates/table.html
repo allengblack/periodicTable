@@ -59,48 +59,11 @@
                     <th class="grp7">Group 7</th>
                     <th class="grp8">Group 8</th>
                 </tr>
-                <tr>
-                    <td class="grp1">
-                        <a class="btn btn-default"  ng-click="addElementUrl('elements/hydrogen.json')">{{elements[count].symbol}} </a>
-                    </td>
-                    <td class="grp2"></td>
-                    <td class="grp3"></td>
-                    <td class="grp4"></td>
-                    <td class="grp5"></td>
-                    <td class="grp6"></td>
-                    <td class="grp7"></td>
-                    <td class="grp8">
-                        <a class="btn btn-default" ng-click="addElementUrl('elements/helium.json')">{{elements[count+1].symbol}}</a>
+                <tr ng-repeat="group in elementsGroup track by $index">
+                    <td class="grp{{$index + 1}}" ng-repeat="element in group track by $index">
+                        <a class="btn btn-default" ng-if="element != null">{{element.symbol}} </a>
                     </td>
                 </tr>
-                
-                <tr>
-                    <td class="grp1">
-                        <a class="btn btn-default" ng-click="addElementUrl('')">{{elements[count+2].symbol}}</a>
-                    </td>
-                    <td class="grp2">
-                        <a class="btn btn-default" ng-click="addElementUrl('')">{{elements[count+3].symbol}}</a>
-                    </td>
-                    <td class="grp3">
-                        <a class="btn btn-default" ng-click="addElementUrl('')">{{elements[count+4].symbol}}</a>
-                    </td>
-                    <td class="grp4">
-                        <a class="btn btn-default" ng-click="addElementUrl()">{{elements[count+5].symbol}}</a>
-                    </td>
-                    <td class="grp5">
-                        <a class="btn btn-default" ng-click="addElementUrl('')">{{elements[count+6].symbol}}</a>
-                    </td>
-                    <td class="grp6">
-                        <a class="btn btn-default" ng-click="addElementUrl('')">{{elements[count+7].symbol}}</a>
-                    </td>
-                    <td class="grp7">
-                        <a class="btn btn-default" ng-click="addElementUrl('')">{{elements[count+8].symbol}}</a>
-                    </td>
-                    <td class="grp8">
-                        <a class="btn btn-default" ng-click="addElementUrl('')">{{elements[count+9].symbol}}</a>
-                    </td>
-                </tr>
-
             </table>    
         </div>  
     </section> 
