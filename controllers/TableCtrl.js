@@ -1,7 +1,3 @@
-/**
- * Created by g-man on 8/28/16.
- */
-
 function errorhandler (err, obj) {
     console.error(err, obj);
 }
@@ -59,6 +55,4 @@ periodicTable.controller('TableCtrl', function($scope, $http, PeriodicTableServi
         }
         return ret;
     }
-
-    // $scope.addElementUrl(url) = PeriodicTableServiceData.addElementUrl(url);
 });
