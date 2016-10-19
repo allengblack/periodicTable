@@ -25,34 +25,38 @@ periodicTable.controller('TableCtrl', function($scope, $http, PeriodicTableServi
     }).error(errorhandler);
 
     $scope.getTable = function (arr) {
-        var ret = [];
+        var result = [];
         var groups = [2, 8, 8, 8, 8, 8, 8, 8, 8];
         var count = 0;
-        for (var gi = 0; gi < groups.length; gi++) {
-            var rett = [];
-            var group = groups[gi];
-            for (var ggi = 0; ggi < group; ggi++) {
+
+        for (var i = 0; i < groups.length; i++) {
+            var ret = [];
+            var group = groups[i];
+
+            for (var j = 0; j < group; j++) {
                 if (!arr[count]) {
-                    ret.push(rett);
-                    return ret;
+                    result.push(ret);
+                    return result;
                 }
-                rett.push(arr[count]);
+                ret.push(arr[count]);
                 count++;
             }
-            for (var ggj = group; ggj < 8; ggj++) {
+
+            for (var k = group; k < 8; k++) {
                 if (!arr[count]) {
-                    ret.push(rett);
-                    return ret;
+                    result.push(ret);
+                    return result;
                 }
-                rett.push(null);
-                //count++;
+                ret.push(null);
             }
-            if (gi == 0) { //shifts helium to the end spectrum
-                rett[rett.length - 1] = arr[1];
-                rett[1] = null;
+
+            if (i == 0) { //shifts helium to the end spectrum
+                ret[ret.length - 1] = arr[1];
+                ret[1] = null;
             }
-            ret.push(rett);
+            result.push(ret);
         }
-        return ret;
+        return result;
     }
+
 });
